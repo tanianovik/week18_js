@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="formBackground">
+            <div class="formContent">
+<h1 class="h1">Опрос для владельцев котиков</h1>
+<br>
+<form novalidate>
+<fieldset class="fieldset">
+    <legend>Контактная информация</legend>
+    <br>
+<div>
+    <label for="catname">Кличка питомца</label>
+    <input type="text" id="catname" placeholder="Кличка" required />
+</div>
+<br>
+<div>
+    <label for="ownername">Имя владельца</label>
+    <input type="text" id="ownername" placeholder="Ваше имя" required />
+</div>
+<br>
+<div>
+    <label for="contact">Телефон владельца</label>
+    <input type="tel" id="contact" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон" required />   
+    <p class="notion">(Формат ввода: 123-456-7890)</p>
+
+</div>
+<br>
+</fieldset>
+
+<br>
+<div class="formFont">
+<p>Укажите породу вашего питомца:</p> 
+    <select required>
+        <option value="">Выберите породу</option>
+        <option value="first option">Норвежский лесной</option>
+        <option value="second option">Мейнкун</option>
+        <option value="third option">Сиамская</option>
+        <option value="fourth option">Сфинкс</option>
+        <option value="fifth option">Двортерьер</option>
+        <option value="sixth option">Персидская</option>
+        <option value="seventh option">Экзот</option>
+        <option value="eighth option">Бенгальская</option>
+    </select>
+</div>
+<br>
+
+<div class="formFont">
+    <p >Чем питается ваш котик? Выберите все возможные варианты:</p> 
+    <label><input  type="checkbox" name="food" value="1" />Сухой корм<br></label>
+    <label><input  type="checkbox" name="food" value="2" />Влажный корм <br /></label>
+    <label><input  type="checkbox" name="food" value="3" />Натуральный корм <br /></label>
+</div>
+
+<div class="formFont">
+    <p>Укажите пол вашего питомца</p>
+    <label><input type="radio" name="sex" value="f"/> <span>Девочка</span></label><br>
+    <label><input type="radio" name="sex" value="m"/> <span>Мальчик</span></label> <br>
+</div>
+
+<div class="formFont">
+    <br>
+    <label for="comment">Комментарий:</label> <br><br>
+<textarea name="comment" id="comment" rows="3" cols="40" placeholder="Ваш комментарий" required></textarea> 
+</div>
+
+<div class="formFont">
+    <p>Прикрепите фото вашего питомца</p>
+    <input type="file" placeholder="Файл" required/>
+</div>
+<br><br>
+
+<div><button class="button">Сохранить</button></div>
+
+<div id="errorsInfo"></div>
+</div>
+</div>
+</div>
+
+
+
+</form>
+
+<script src="./assets/styles/index.js"></script>
+
+</body>
+</html>
